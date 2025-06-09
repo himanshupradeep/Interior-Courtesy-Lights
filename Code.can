@@ -1,0 +1,34 @@
+/*@!Encoding:1252*/
+includes
+{
+  
+}
+
+variables
+{
+  message Door_Message dm;
+  message Light_Message lm;
+}
+
+on message Door_Message
+{
+    if(@Env_Switch == 1)
+    {
+        lm.Center_Interior_Light_Status = 1;
+        output(lm);
+        write("Light is On");
+    }
+    else
+    {
+        lm.Center_Interior_Light_Status = 0;
+        output(lm);
+        write("Light is OFF");
+    }
+}
+
+on envVar Env_Switch
+{
+  dm.Front_Left_Door_Status = @Env_Switch;
+  dm.Front_Right_Door_Status = @Env_Switch;
+  output(dm);
+}
