@@ -12,6 +12,9 @@ The implementation involves the following key components:
 3. **Panel Designing** - Creating a user interface panel in CANoe to visualize and control the door status and lights.
 4. **CAPL Scripting** - Writing CAPL scripts to automate the lighting behavior based on door signals.
 
+![ScreenRecording2025-06-15164738-ezgif com-video-to-gif-converter](https://github.com/user-attachments/assets/744a36e3-d763-46f7-b0d6-4e83519ea306)
+
+
 ## Functionality
 -  **Lights ON:** When any one door is open.
   ![Screenshot 2025-06-09 195634](https://github.com/user-attachments/assets/917ef4c0-6279-4358-977a-5e403b7966b1)
